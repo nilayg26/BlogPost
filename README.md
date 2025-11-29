@@ -30,10 +30,10 @@ This system supports role-based access control, content creation, tagging, and a
     ```bash
     ./mvnw clean spring-boot:run
     ```
-5. On a new Terminal Window you can run CURL commands to verify
+5. On a new Terminal Window you can run CURL commands to verify, Screenshot is provided:
 
    ![Image](./assets/output.png)
-# Sample Input/Ouput Step by step
+# Sample Input/Ouput Step by step (Run in Terminal)
 
 ## Create User
 ```bash
