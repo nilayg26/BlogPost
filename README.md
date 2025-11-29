@@ -3,7 +3,7 @@
 A backend REST API for a blogging platform built with **Spring Boot**. 
 This system supports role-based access control, content creation, tagging, and a comment moderation system.
 
-## DBMS Schema
+## Database Schema
 ![Image](./assets/dbmsSchema.png)
 
 ## System Design
