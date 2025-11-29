@@ -11,7 +11,7 @@ This system supports role-based access control, content creation, tagging, and a
 
 ## 🚀 Technologies Used
 * **Java 17 / 21**
-* **Spring Boot 3.x** (Web, Data JPA)
+* **Spring Boot 4** (Web, Data JPA)
 * **H2 Database** (In-Memory SQL DB)
 * **JUnit 5 & Mockito** (Testing)
 * **Maven** (Build Tool)
