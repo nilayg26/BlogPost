@@ -3,7 +3,7 @@ package com.example.blog_nilay.controller;
 
 import com.example.blog_nilay.entity.BlogPost;
 import com.example.blog_nilay.entity.User;
-import com.example.blog_nilay.repository.UserRepository; // Temporary for testing
+import com.example.blog_nilay.repository.UserRepository;
 import com.example.blog_nilay.service.BlogPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
