@@ -18,9 +18,9 @@ public class BlogPostController {
     private BlogPostService blogPostService;
 
     @Autowired
-    private UserRepository userRepository; // Needed to find author temporarily
+    private UserRepository userRepository; 
 
-    // 1. Create a Post
+
     // URL: POST /api/posts?userId=1
     @PostMapping
     public BlogPost createPost(@RequestBody BlogPost post, @RequestParam Long userId) {
@@ -28,21 +28,18 @@ public class BlogPostController {
         return blogPostService.createPost(post, author);
     }
 
-    // 2. Search by Title
     // URL: GET /api/posts/search?q=Spring
     @GetMapping("/search")
     public List<BlogPost> searchPosts(@RequestParam String q) {
         return blogPostService.searchPosts(q);
     }
 
-    // 3. Like a Post
     // URL: POST /api/posts/1/like
     @PostMapping("/{id}/like")
     public void likePost(@PathVariable Long id) {
         blogPostService.likePost(id);
     }
 
-    // 4. Get All Posts
     @GetMapping
     public List<BlogPost> getAllPosts() {
         return blogPostService.getAllPosts();
