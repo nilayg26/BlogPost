@@ -45,7 +45,6 @@ public class BlogPostService {
     public BlogPost createPost(BlogPost post, Long userId) {
         User user = userRepository.findById(userId).orElseThrow();
 
-        // THE SIMPLE MANUAL CHECK
         if (user.getRole() != Role.AUTHOR && user.getRole() != Role.ADMIN) {
             throw new RuntimeException("Permission Denied: Only Authors can post!");
         }
@@ -57,7 +56,6 @@ public class BlogPostService {
     public void deletePost(Long postId, Long userId) {
         User admin = userRepository.findById(userId).orElseThrow();
 
-        // THE SIMPLE MANUAL CHECK
         if (admin.getRole() != Role.ADMIN) {
             throw new RuntimeException("Permission Denied: Only Admins can delete!");
         }
